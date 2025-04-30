@@ -1,7 +1,7 @@
 parse_config:
   # Map raw bindings to human-readable labels
   raw_binding_map:
-    "&mo 1": "Fn1"
+    "&mo 1": "L1"
     "&mo 2": "Fn2"
     "&kp LALT": "Alt"
     "&kp RALT": "Alt"
@@ -9,24 +9,30 @@ parse_config:
     "&kp RCTRL": "Ctrl"
     "&kp LGUI": "Cmd"
     "&kp RGUI": "Cmd"
-    "&kp LSHFT": "Shift"
-    "&kp RSHFT": "Shift"
+    "&kp LSHFT": "Shft"
+    "&kp RSHFT": "Shft"
     "&kp LEFT_ALT": "Alt"
     "&kp RIGHT_ALT": "Alt"
     "&kp LEFT_CONTROL": "Ctrl"
     "&kp RIGHT_CONTROL": "Ctrl"
     "&kp LEFT_COMMAND": "Cmd"
     "&kp RIGHT_COMMAND": "Cmd"
-    "&kp LEFT_SHIFT": "Shift"
-    "&kp RIGHT_SHIFT": "Shift"
-    "&kp LA(LC(LG(NUMBER_1)))": "topLeft"
-    "&kp LA(LC(LG(W)))": "WhatsApp"
-    "&kp LA(LC(LG(S)))": "Spotify"
-    "&kp LA(LC(LG(C)))": "Chrome"
-    "&kp LA(LC(LG(R)))": "Cursor"
-    "&kp LA(LC(LG(G)))": "GitHub"
-    "&kp LA(LC(LG(N2)))": "LeftScr"
-    "&kp LA(LC(LG(N3)))": "RightScr"
+    "&kp LEFT_SHIFT": "Shft"
+    "&kp RIGHT_SHIFT": "Shft"
+    "&kp LA(LC(LG(NUMBER_1)))": "TpLt"
+    "&kp LA(LC(LG(W)))": "WApp"
+    "&kp LA(LC(LG(S)))": "Spot"
+    "&kp LA(LC(LG(C)))": "Chrm"
+    "&kp LA(LC(LG(R)))": "Curs"
+    "&kp LA(LC(LG(G)))": "GitH"
+    "&kp LA(LC(LG(N2)))": "L←"
+    "&kp LA(LC(LG(N3)))": "R→"
+    "&kp LG(LEFT)": "⌘←"
+    "&kp LA(LEFT)": "⌥←"
+    "&kp LA(RIGHT)": "⌥→"
+    "&kp LG(RIGHT)": "⌘→"
+    "&kp LS(LG(N4))": "ScrS"
+    "&kp LA(A)": "å"
     "&kp LA(LS(N2))": "€"
     "&kp LA(N3)": "£"
     "&kp UP": "↑"
@@ -34,10 +40,10 @@ parse_config:
     "&kp LEFT": "←"
     "&kp RIGHT": "→"
     "&kp ESCAPE": "Esc"
-    "&kp ENTER": "Enter"
+    "&kp ENTER": "↵"
     "&kp BACKSPACE": "⌫"
     "&kp TAB": "Tab"
-    "&kp SPACE": "Space"
+    "&kp SPACE": "Spce"
     "&kp DELETE": "Del"
     "&kp PLUS": "+"
     "&kp MINUS": "-"
@@ -62,20 +68,20 @@ parse_config:
     "&kp RIGHT_PARENTHESIS": ")"
     "&kp UNDER": "_"
     "&kp KP_MULTIPLY": "×"
-    "&bootloader": "BOOT"
+    "&bootloader": "Boot"
     "&swedish_a": "å"
     "&swedish_o": "ö"
-    "&email": "Email"
+    "&email": "@"
     "&none": ""
     "&trans": ""
     "&macro_ver": "VER"
-    "&stp STP_BAT": "BATT"
-    "&bt BT_CLR": "BT CLR"
-    "&bl BL_TOG": "BL TOG"
+    "&stp STP_BAT": "Batt"
+    "&bt BT_CLR": "CLR"
+    "&bl BL_TOG": "BLTg"
     "&rgb_ug RGB_TOG": "RGB"
     "&bl BL_INC": "BL+"
     "&bl BL_DEC": "BL-"
-    "&studio_unlock": "UNLK"
+    "&studio_unlock": "Unlk"
 
 draw_config:
   key_w: 60
@@ -95,23 +101,86 @@ draw_config:
     tap: {x: 0, y: 0, font_size: 14}
     hold: {x: 0, y: -12, font_size: 12}
     shifted: {x: 0, y: 12, font_size: 10}
+  
+  # Background color of the SVG
+  svg_fill: "#f5f5f5"
+  
+  # Customize keymap appearance
+  keycaps_style:
+    # App shortcuts - orange/warm colors
+    L1.WApp: {fill: "#33cc33", stroke: "#1a991a"}
+    L1.Spot: {fill: "#1DB954", stroke: "#169042"}
+    L1.Chrm: {fill: "#ffaa66", stroke: "#cc8855"}
+    L1.Curs: {fill: "#ff9966", stroke: "#cc7755"} 
+    L1.GitH: {fill: "#1DB954", stroke: "#169D45"}
+    L1.TpLt: {fill: "#ffa64d", stroke: "#cc8840"}
+    L1.L←: {fill: "#ffbb77", stroke: "#cc9960"}
+    L1.R→: {fill: "#ffbb77", stroke: "#cc9960"}
+    
+    # Currency symbols - light blue/purple
+    L1.€: {fill: "#d1d1ff", stroke: "#9999cc"}
+    L1.£: {fill: "#d1d1ff", stroke: "#9999cc"}
+    
+    # System keys - reddish
+    L1.Boot: {fill: "#ff9999", stroke: "#cc7777"}
+    Base.L1: {fill: "#ffb3b3", stroke: "#cc8888"}
+    Base.Fn2: {fill: "#ffb3b3", stroke: "#cc8888"}
+    
+    # Special characters - purple
+    L1.@: {fill: "#cc99ff", stroke: "#9966cc"}
+    L1.ö: {fill: "#cc99ff", stroke: "#9966cc"}
+    L1.å: {fill: "#cc99ff", stroke: "#9966cc"}
+    
+    # Navigation keys - blue
+    L1.⌘←: {fill: "#80bfff", stroke: "#6699cc"}
+    L1.⌥←: {fill: "#80bfff", stroke: "#6699cc"}
+    L1.↑: {fill: "#80bfff", stroke: "#6699cc"}
+    L1.⌥→: {fill: "#80bfff", stroke: "#6699cc"}
+    L1.⌘→: {fill: "#80bfff", stroke: "#6699cc"}
+    L1.←: {fill: "#80bfff", stroke: "#6699cc"}
+    L1.↓: {fill: "#80bfff", stroke: "#6699cc"}
+    L1.→: {fill: "#80bfff", stroke: "#6699cc"}
+    Base.↑: {fill: "#80bfff", stroke: "#6699cc"}
+    Base.↓: {fill: "#80bfff", stroke: "#6699cc"}
+    Base.←: {fill: "#80bfff", stroke: "#6699cc"}
+    Base.→: {fill: "#80bfff", stroke: "#6699cc"}
+    
+    # Screenshot - bright orange
+    Base.ScrS: {fill: "#ff8000", stroke: "#cc6600"}
+    
+    # Modifiers - light gray
+    Base.Shft: {fill: "#ebebeb", stroke: "#aaaaaa"}
+    Base.Ctrl: {fill: "#ebebeb", stroke: "#aaaaaa"}
+    Base.Alt: {fill: "#ebebeb", stroke: "#aaaaaa"}
+    Base.Cmd: {fill: "#ebebeb", stroke: "#aaaaaa"}
+    Base.Spce: {fill: "#ebebeb", stroke: "#aaaaaa"}
+    Base.↵: {fill: "#ebebeb", stroke: "#aaaaaa"}
+    Base.⌫: {fill: "#ebebeb", stroke: "#aaaaaa"}
+    Base.Tab: {fill: "#ebebeb", stroke: "#aaaaaa"}
+    Base.Esc: {fill: "#ebebeb", stroke: "#aaaaaa"}
+    
   svg_style: |
+    /* Base key style */
     .key {
-      fill: #eee;
-      stroke: #888;
+      fill: #ffffff;
+      stroke: #aaaaaa;
+      stroke-width: 1;
     }
-    .shifted {
-      fill: #ddd;
+    
+    /* Layer title styling */
+    .layer-label {
+      font-weight: bold;
+      font-size: 18px;
+      fill: #333333;
+      font-family: 'Arial', sans-serif;
     }
+    
+    /* Text styling */
     text {
-      font-family: sans-serif;
-      fill: #333;
+      font-family: 'Arial', sans-serif;
+      fill: #000000;
       text-anchor: middle;
       dominant-baseline: central;
-    }
-    .combo {
-      fill: #ccf;
-    }
-    .hold {
-      fill: #faa;
+      font-weight: 700;
+      stroke: none;
     } 

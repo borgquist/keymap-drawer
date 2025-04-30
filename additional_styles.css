@@ -1,0 +1,235 @@
+/* App shortcuts */
+.WhatsApp-key {
+  fill: #25D366 !important;
+  stroke: #1EA952 !important;
+}
+
+.WhatsApp-key rect, rect.WhatsApp-key {
+  fill: #25D366 !important;
+  stroke: #1EA952 !important;
+}
+
+.Spotify-key {
+  fill: #1DB954 !important;
+  stroke: #169D45 !important;
+}
+
+.Spotify-key rect, rect.Spotify-key {
+  fill: #1DB954 !important;
+  stroke: #169D45 !important;
+}
+
+.Chrome-key {
+  fill: #4285F4 !important;
+  stroke: #366AC1 !important;
+}
+
+.Chrome-key rect, rect.Chrome-key {
+  fill: #4285F4 !important;
+  stroke: #366AC1 !important;
+}
+
+.Cursor-key {
+  fill: #9B59B6 !important;
+  stroke: #8E44AD !important;
+}
+
+.Cursor-key rect, rect.Cursor-key {
+  fill: #9B59B6 !important;
+  stroke: #8E44AD !important;
+}
+
+.GitHub-key {
+  fill: #1DB954 !important;
+  stroke: #169D45 !important;
+}
+
+.GitHub-key rect, rect.GitHub-key {
+  fill: #1DB954 !important;
+  stroke: #169D45 !important;
+}
+
+.topLeft-key {
+  fill: #E74C3C !important;
+  stroke: #C0392B !important;
+}
+
+.topLeft-key rect, rect.topLeft-key {
+  fill: #E74C3C !important;
+  stroke: #C0392B !important;
+}
+
+.LeftScr-key {
+  fill: #E67E22 !important;
+  stroke: #D35400 !important;
+}
+
+.LeftScr-key rect, rect.LeftScr-key {
+  fill: #E67E22 !important;
+  stroke: #D35400 !important;
+}
+
+.RightScr-key {
+  fill: #F39C12 !important;
+  stroke: #E67E22 !important;
+}
+
+.RightScr-key rect, rect.RightScr-key {
+  fill: #F39C12 !important;
+  stroke: #E67E22 !important;
+}
+
+/* Currency symbols */
+.euro-key {
+  fill: #2980B9 !important;
+  stroke: #2471A3 !important;
+}
+
+.euro-key rect, rect.euro-key {
+  fill: #2980B9 !important;
+  stroke: #2471A3 !important;
+}
+
+.pound-key {
+  fill: #3498DB !important;
+  stroke: #2980B9 !important;
+}
+
+.pound-key rect, rect.pound-key {
+  fill: #3498DB !important;
+  stroke: #2980B9 !important;
+}
+
+/* System keys */
+.BOOT-key {
+  fill: #E74C3C !important;
+  stroke: #C0392B !important;
+}
+
+.BOOT-key rect, rect.BOOT-key {
+  fill: #E74C3C !important;
+  stroke: #C0392B !important;
+}
+
+.Fn1-key {
+  fill: #9B59B6 !important;
+  stroke: #8E44AD !important;
+}
+
+.Fn1-key rect, rect.Fn1-key {
+  fill: #9B59B6 !important;
+  stroke: #8E44AD !important;
+}
+
+.Fn2-key {
+  fill: #8E44AD !important;
+  stroke: #7D3C98 !important;
+}
+
+.Fn2-key rect, rect.Fn2-key {
+  fill: #8E44AD !important;
+  stroke: #7D3C98 !important;
+}
+
+/* Special characters */
+.Email-key {
+  fill: #16A085 !important;
+  stroke: #0E6655 !important;
+}
+
+.Email-key rect, rect.Email-key {
+  fill: #16A085 !important;
+  stroke: #0E6655 !important;
+}
+
+.o-umlaut-key {
+  fill: #27AE60 !important;
+  stroke: #229954 !important;
+}
+
+.o-umlaut-key rect, rect.o-umlaut-key {
+  fill: #27AE60 !important;
+  stroke: #229954 !important;
+}
+
+.a-ring-key {
+  fill: #2ECC71 !important;
+  stroke: #27AE60 !important;
+}
+
+.a-ring-key rect, rect.a-ring-key {
+  fill: #2ECC71 !important;
+  stroke: #27AE60 !important;
+}
+
+/* Navigation keys */
+.arrow-key {
+  fill: #3498DB !important;
+  stroke: #2980B9 !important;
+}
+
+.arrow-key rect, rect.arrow-key {
+  fill: #3498DB !important;
+  stroke: #2980B9 !important;
+}
+
+/* Screenshot */
+.Screenshot-key {
+  fill: #E74C3C !important;
+  stroke: #C0392B !important;
+}
+
+.Screenshot-key rect, rect.Screenshot-key {
+  fill: #E74C3C !important;
+  stroke: #C0392B !important;
+}
+
+/* Modifiers */
+.mod-key {
+  fill: #95A5A6 !important;
+  stroke: #7F8C8D !important;
+}
+
+.mod-key rect, rect.mod-key {
+  fill: #95A5A6 !important;
+  stroke: #7F8C8D !important;
+}
+
+/* Font adjustments to make text more solid */
+text, tspan {
+  font-family: 'Arial', sans-serif !important;
+  font-weight: 700 !important;
+  fill: #000000 !important;
+  stroke: none !important;
+  text-rendering: geometricPrecision !important;
+}
+
+/* Ensure all key text is black and bold */
+.key text, .key tspan {
+  fill: #000000 !important;
+  font-weight: 700 !important;
+}
+
+/* Make text on colored keys more readable */
+.WhatsApp-key text, .WhatsApp-key tspan,
+.Spotify-key text, .Spotify-key tspan,
+.Chrome-key text, .Chrome-key tspan,
+.Cursor-key text, .Cursor-key tspan,
+.GitHub-key text, .GitHub-key tspan,
+.topLeft-key text, .topLeft-key tspan,
+.LeftScr-key text, .LeftScr-key tspan,
+.RightScr-key text, .RightScr-key tspan,
+.euro-key text, .euro-key tspan,
+.pound-key text, .pound-key tspan,
+.BOOT-key text, .BOOT-key tspan,
+.Fn1-key text, .Fn1-key tspan,
+.Fn2-key text, .Fn2-key tspan,
+.Email-key text, .Email-key tspan,
+.o-umlaut-key text, .o-umlaut-key tspan,
+.a-ring-key text, .a-ring-key tspan,
+.arrow-key text, .arrow-key tspan,
+.Screenshot-key text, .Screenshot-key tspan,
+.mod-key text, .mod-key tspan {
+  fill: #000000 !important;
+  font-weight: 700 !important;
+} 
