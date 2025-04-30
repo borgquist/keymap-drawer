@@ -19,7 +19,7 @@ parse_config:
     "&kp RIGHT_COMMAND": "Cmd"
     "&kp LEFT_SHIFT": "Shft"
     "&kp RIGHT_SHIFT": "Shft"
-    "&kp LA(LC(LG(NUMBER_1)))": "TpLt"
+    "&kp LA(LG(LC(NUMBER_1)))": "TpLt"
     "&kp LA(LC(LG(W)))": "WApp"
     "&kp LA(LC(LG(S)))": "Spot"
     "&kp LA(LC(LG(C)))": "Chrm"
@@ -98,22 +98,45 @@ draw_config:
   key_ry: 6
   legend:
     mid: {x: 0, y: 0}  # Center the primary legend
-    tap: {x: 0, y: 0, font_size: 14}
-    hold: {x: 0, y: -12, font_size: 12}
-    shifted: {x: 0, y: 12, font_size: 10}
+    tap: {x: 0, y: 5, font_size: 14}  # Main character, slightly lower
+    hold: {x: 0, y: -15, font_size: 11}  # Shifted character, above
+    shifted: {x: 0, y: -16, font_size: 12}
   
   # Background color of the SVG
   svg_fill: "#f5f5f5"
   
   # Customize keymap appearance
   keycaps_style:
+    # Number keys with tap-hold
+    Base.1: {tap: "1", hold: "!"}
+    Base.2: {tap: "2", hold: "@"}
+    Base.3: {tap: "3", hold: "#"}
+    Base.4: {tap: "4", hold: "$"}
+    Base.5: {tap: "5", hold: "%"}
+    Base.6: {tap: "6", hold: "^"}
+    Base.7: {tap: "7", hold: "&"}
+    Base.8: {tap: "8", hold: "*"}
+    Base.9: {tap: "9", hold: "("}
+    Base.0: {tap: "0", hold: ")"}
+    Base.-: {tap: "-", hold: "_"}
+    Base.=: {tap: "=", hold: "+"}
+    
+    # Symbol keys with tap-hold versions
+    Base.;: {tap: ";", hold: ":"}
+    Base."'": {tap: "'", hold: "\""}
+    Base.",": {tap: ",", hold: "<"}
+    Base.".": {tap: ".", hold: ">"}
+    Base./: {tap: "/", hold: "?"}
+    Base.\: {tap: "\\", hold: "|"}
+    Base."~": {tap: "~", hold: "`"}
+    
     # App shortcuts - orange/warm colors
     L1.WApp: {fill: "#33cc33", stroke: "#1a991a"}
     L1.Spot: {fill: "#1DB954", stroke: "#169042"}
     L1.Chrm: {fill: "#ffaa66", stroke: "#cc8855"}
     L1.Curs: {fill: "#ff9966", stroke: "#cc7755"} 
     L1.GitH: {fill: "#1DB954", stroke: "#169D45"}
-    L1.TpLt: {fill: "#ffa64d", stroke: "#cc8840"}
+    L1.TpLt: {fill: "#33cc33", stroke: "#cc8840"}
     L1.L←: {fill: "#ffbb77", stroke: "#cc9960"}
     L1.R→: {fill: "#ffbb77", stroke: "#cc9960"}
     

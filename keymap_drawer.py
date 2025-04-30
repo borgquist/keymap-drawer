@@ -5,6 +5,7 @@ import re
 import subprocess
 from pathlib import Path
 import xml.etree.ElementTree as ET
+import html
 
 def convert_keymap():
     """Run the keymap conversion process."""
@@ -39,6 +40,53 @@ def read_custom_css():
     if css_file.exists():
         return css_file.read_text()
     return None
+
+def add_shifted_labels(svg_file):
+    """Add shifted labels to the SVG file."""
+    # Define the shifted values for each key
+    SHIFTED_KEYS = {
+        "1": "!",
+        "2": "@",
+        "3": "#",
+        "4": "$",
+        "5": "%",
+        "6": "^",
+        "7": "&amp;",  # Properly escaped ampersand
+        "8": "*",
+        "9": "(",
+        "0": ")",
+        "-": "_",
+        "=": "+",
+        "`": "~",
+        "[": "{",
+        "]": "}",
+        "\\": "|",
+        ";": ":",
+        "'": "&quot;",  # Properly escaped quotation mark
+        ",": "&lt;",    # Properly escaped less-than
+        ".": "&gt;",    # Properly escaped greater-than
+        "/": "?"
+    }
+    
+    with open(svg_file, 'r') as f:
+        content = f.read()
+    
+    # For each key in our mapping
+    for key, shifted in SHIFTED_KEYS.items():
+        # Use regex to find text elements containing exactly our key character
+        pattern = rf'(<g[^>]*key[^>]*>\s*<rect[^>]*>\s*<text[^>]*>)({re.escape(key)})(</text>)'
+        
+        # Replace with our dual-labeled structure
+        replacement = rf'\1<tspan class="primary-label" y="5">\2</tspan><tspan class="shifted-label" x="0" y="-15">{shifted}</tspan>\3'
+        
+        # Apply the replacement
+        content = re.sub(pattern, replacement, content)
+    
+    # Write the modified content back to the file
+    with open(svg_file, 'w') as f:
+        f.write(content)
+    
+    print(f"Added shifted labels to {svg_file}")
 
 def add_css_to_svg(svg_file):
     """Add custom CSS to the SVG file."""
@@ -183,8 +231,11 @@ def main():
     # Convert the keymap to YAML and then to SVG
     convert_keymap()
     
-    # Apply custom styling to the SVG
+    # Add shifted labels to the SVG
     svg_file = "adv360.svg"
+    add_shifted_labels(svg_file)
+    
+    # Apply custom styling to the SVG
     add_css_to_svg(svg_file)
 
 if __name__ == "__main__":
