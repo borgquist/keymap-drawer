@@ -146,7 +146,7 @@ draw_config:
     Base.→: {fill: "#80bfff", stroke: "#6699cc"}
     
     # Screenshot - bright orange
-    Base.ScrS: {fill: "#ff8000", stroke: "#cc6600"}
+    Base.ScrS: {fill: "#ffbb77", stroke: "#cc6600"}
     
     # Modifiers - light gray
     Base.Shft: {fill: "#ebebeb", stroke: "#aaaaaa"}

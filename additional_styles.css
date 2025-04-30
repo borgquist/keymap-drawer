@@ -175,12 +175,12 @@
 
 /* Screenshot */
 .Screenshot-key {
-  fill: #E74C3C !important;
+  fill: #ffbb77 !important;
   stroke: #C0392B !important;
 }
 
 .Screenshot-key rect, rect.Screenshot-key {
-  fill: #E74C3C !important;
+  fill: #ffbb77 !important;
   stroke: #C0392B !important;
 }
 
