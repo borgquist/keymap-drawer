@@ -1,0 +1,117 @@
+parse_config:
+  # Map raw bindings to human-readable labels
+  raw_binding_map:
+    "&mo 1": "Fn1"
+    "&mo 2": "Fn2"
+    "&kp LALT": "Alt"
+    "&kp RALT": "Alt"
+    "&kp LCTRL": "Ctrl"
+    "&kp RCTRL": "Ctrl"
+    "&kp LGUI": "Cmd"
+    "&kp RGUI": "Cmd"
+    "&kp LSHFT": "Shift"
+    "&kp RSHFT": "Shift"
+    "&kp LEFT_ALT": "Alt"
+    "&kp RIGHT_ALT": "Alt"
+    "&kp LEFT_CONTROL": "Ctrl"
+    "&kp RIGHT_CONTROL": "Ctrl"
+    "&kp LEFT_COMMAND": "Cmd"
+    "&kp RIGHT_COMMAND": "Cmd"
+    "&kp LEFT_SHIFT": "Shift"
+    "&kp RIGHT_SHIFT": "Shift"
+    "&kp LA(LC(LG(NUMBER_1)))": "topLeft"
+    "&kp LA(LC(LG(W)))": "WhatsApp"
+    "&kp LA(LC(LG(S)))": "Spotify"
+    "&kp LA(LC(LG(C)))": "Chrome"
+    "&kp LA(LC(LG(R)))": "Cursor"
+    "&kp LA(LC(LG(G)))": "GitHub"
+    "&kp LA(LC(LG(N2)))": "LeftScr"
+    "&kp LA(LC(LG(N3)))": "RightScr"
+    "&kp LA(LS(N2))": "€"
+    "&kp LA(N3)": "£"
+    "&kp UP": "↑"
+    "&kp DOWN": "↓"
+    "&kp LEFT": "←"
+    "&kp RIGHT": "→"
+    "&kp ESCAPE": "Esc"
+    "&kp ENTER": "Enter"
+    "&kp BACKSPACE": "⌫"
+    "&kp TAB": "Tab"
+    "&kp SPACE": "Space"
+    "&kp DELETE": "Del"
+    "&kp PLUS": "+"
+    "&kp MINUS": "-"
+    "&kp EQUAL": "="
+    "&kp SLASH": "/"
+    "&kp BACKSLASH": "\\"
+    "&kp TILDE": "~"
+    "&kp GRAVE": "`"
+    "&kp SEMI": ";"
+    "&kp COLON": ":"
+    "&kp SQT": "'"
+    "&kp DQT": "\""
+    "&kp COMMA": ","
+    "&kp DOT": "."
+    "&kp FSLH": "/"
+    "&kp BSLH": "\\"
+    "&kp LEFT_BRACE": "{"
+    "&kp RIGHT_BRACE": "}"
+    "&kp LEFT_BRACKET": "["
+    "&kp RIGHT_BRACKET": "]"
+    "&kp LEFT_PARENTHESIS": "("
+    "&kp RIGHT_PARENTHESIS": ")"
+    "&kp UNDER": "_"
+    "&kp KP_MULTIPLY": "×"
+    "&bootloader": "BOOT"
+    "&swedish_a": "å"
+    "&swedish_o": "ö"
+    "&email": "Email"
+    "&none": ""
+    "&trans": ""
+    "&macro_ver": "VER"
+    "&stp STP_BAT": "BATT"
+    "&bt BT_CLR": "BT CLR"
+    "&bl BL_TOG": "BL TOG"
+    "&rgb_ug RGB_TOG": "RGB"
+    "&bl BL_INC": "BL+"
+    "&bl BL_DEC": "BL-"
+    "&studio_unlock": "UNLK"
+
+draw_config:
+  key_w: 60
+  key_h: 56
+  split_gap: 30
+  combo_w: 28
+  combo_h: 22
+  font_size: 14
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
+  # Adjust key layout parameters
+  key_rx: 6
+  key_ry: 6
+  legend:
+    mid: {x: 0, y: 0}  # Center the primary legend
+    tap: {x: 0, y: 0, font_size: 14}
+    hold: {x: 0, y: -12, font_size: 12}
+    shifted: {x: 0, y: 12, font_size: 10}
+  svg_style: |
+    .key {
+      fill: #eee;
+      stroke: #888;
+    }
+    .shifted {
+      fill: #ddd;
+    }
+    text {
+      font-family: sans-serif;
+      fill: #333;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+    .combo {
+      fill: #ccf;
+    }
+    .hold {
+      fill: #faa;
+    } 
