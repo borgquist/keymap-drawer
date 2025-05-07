@@ -19,6 +19,7 @@ parse_config:
     "&kp RIGHT_COMMAND": "Cmd"
     "&kp LEFT_SHIFT": "Shft"
     "&kp RIGHT_SHIFT": "Shft"
+    "&kp RS(RIGHT_ALT)": "ShAlt"
     "&kp LA(LC(LG(NUMBER_1)))": "TpLt"
     "&kp LA(LC(LG(W)))": "WApp"
     "&kp LG(SPACE)": "CmdSp"
