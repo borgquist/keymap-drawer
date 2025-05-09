@@ -634,6 +634,7 @@ text, tspan {
 </g>
 <g transform="translate(742, 28)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan class="primary-label" y="5">=</tspan><tspan class="shifted-label" x="0" y="-15">+</tspan></text>
 </g>
 <g transform="translate(798, 28)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

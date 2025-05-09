@@ -115,11 +115,11 @@
         swedish {
             display-name = "Fn";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &bootloader                                      &bootloader  &trans  &trans  &trans  &trans  &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &to 0        &trans  &trans  &trans  &trans  &trans      &kp LA(A)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans      &trans  &trans  &to 0        &trans  &trans  &trans  &trans  &swedish_o  &swedish_a
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans      &trans                       &trans  &trans  &trans  &trans  &trans      &trans
-&trans  &trans  &trans  &trans  &trans          &trans       &trans  &trans      &trans  &trans  &trans               &trans  &trans  &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &to 0   &trans  &trans  &trans  &trans  &trans      &kp LA(A)
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &to 0   &trans  &trans  &trans  &trans  &swedish_o  &swedish_a
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans      &trans
             >;
 
             label = "L1";
@@ -128,7 +128,7 @@
         mods {
             display-name = "Fn";
             bindings = <
-&trans              &none              &kp LA(LS(N2))      &kp LA(N3)         &none               &none              &bootloader                                                                             &bootloader  &none  &none            &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp UNDER
+&trans              &none              &kp LA(LS(N2))      &kp LA(N3)         &none               &none              &bootloader                                                                             &bootloader  &none  &kp KP_EQUAL     &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp UNDER
 &trans              &none              &kp LA(LC(LG(N2)))  &kp UP             &kp LA(LC(LG(N3)))  &none              &email                                                                                  &none        &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
 &trans              &none              &kp LEFT            &kp DOWN           &kp RIGHT           &none              &stp STP_BAT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &to 0        &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none
 &kp LA(LC(LG(N1)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(G)))   &kp LA(LC(LG(S)))  &kp LA(LC(LG(C)))   &kp LA(LC(LG(R)))                                  &trans                 &trans                                        &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &none
