@@ -1,8 +1,8 @@
 parse_config:
   # Map raw bindings to human-readable labels
   raw_binding_map:
-    "&mo 1": "L1"
-    "&mo 2": "Fn2"
+    "&mo 1": "Swe"
+    "&mo 2": "Num"
     "&kp LALT": "Alt"
     "&kp RALT": "Alt"
     "&kp LCTRL": "Ctrl"
@@ -77,6 +77,13 @@ parse_config:
     "&email": "@"
     "&none": ""
     "&trans": ""
+    "&to 0": "Base"
+    "&to 1": "Swe"
+    "&to 2": "Num"
+    "&to 3": "L3"
+    "&to 4": "L4"
+    "&to 5": "L5"
+    "&to 6": "L6"
     "&macro_ver": "VER"
     "&stp STP_BAT": "Batt"
     "&bt BT_CLR": "CLR"
