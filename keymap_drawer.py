@@ -46,7 +46,7 @@ def read_custom_css():
     return None
 
 def add_shifted_labels(svg_file):
-    """Add shifted labels to the SVG file."""
+    """Add shifted labels to the SVG file, skipping numpad keys."""
     # Define the shifted values for each key
     SHIFTED_KEYS = {
         "1": "!",
@@ -71,25 +71,37 @@ def add_shifted_labels(svg_file):
         ".": "&gt;",    # Properly escaped greater-than
         "/": "?"
     }
-    
+
+    # Indices of numpad keys in your layout (adjust if your layout changes)
+    NUMPAD_INDICES = {10, 12, 22, 23, 24, 25, 26, 39, 40, 41, 42, 43, 55, 56, 57, 58, 59, 71, 72, 73, 74, 75}
+    # Set of numpad key labels
+    NUMPAD_LABELS = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '/', '-', '+', '.', '↵'}
+
     with open(svg_file, 'r') as f:
         content = f.read()
-    
-    # For each key in our mapping
-    for key, shifted in SHIFTED_KEYS.items():
-        # Use regex to find text elements containing exactly our key character
-        pattern = rf'(<g[^>]*key[^>]*>\s*<rect[^>]*>\s*<text[^>]*>)({re.escape(key)})(</text>)'
-        
-        # Replace with our dual-labeled structure
-        replacement = rf'\1<tspan class="primary-label" y="5">\2</tspan><tspan class="shifted-label" x="0" y="-15">{shifted}</tspan>\3'
-        
-        # Apply the replacement
-        content = re.sub(pattern, replacement, content)
-    
-    # Write the modified content back to the file
+
+    # Use regex to find all key groups and their indices
+    def add_shifted(match):
+        g_tag = match.group(1)
+        rect = match.group(2)
+        text = match.group(3)
+        key = match.group(4)
+        endtext = match.group(5)
+        # Extract key index from class (e.g., keypos-22)
+        m = re.search(r'keypos-(\d+)', g_tag)
+        if m and int(m.group(1)) in NUMPAD_INDICES and key in NUMPAD_LABELS:
+            return match.group(0)  # Don't modify numpad keys
+        if key in SHIFTED_KEYS:
+            return f'{g_tag}{rect}{text}<tspan class="primary-label" y="5">{key}</tspan><tspan class="shifted-label" x="0" y="-15">{SHIFTED_KEYS[key]}</tspan>{endtext}'
+        return match.group(0)
+
+    # Pattern to match key groups with a single character key
+    pattern = r'(<g[^>]*keypos-\d+[^>]*>)(\s*<rect[^>]*>)(\s*<text[^>]*>)([^<])(<\/text>)'
+    content = re.sub(pattern, add_shifted, content)
+
     with open(svg_file, 'w') as f:
         f.write(content)
-    
+
     print(f"Added shifted labels to {svg_file}")
 
 def add_css_to_svg(svg_file):
