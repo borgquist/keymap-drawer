@@ -128,11 +128,11 @@
         mods {
             display-name = "Fn";
             bindings = <
-&trans              &trans             &kp LA(LS(N2))      &kp LA(N3)         &trans              &trans             &bootloader                                                                             &bootloader  &trans  &none         &kp SLASH  &kp KP_MULTIPLY  &none   &kp UNDER
-&trans              &trans             &kp LA(LC(LG(N2)))  &kp UP             &kp LA(LC(LG(N3)))  &trans             &email                                                                                  &trans       &trans  &kp N7        &kp N8     &kp N9           &trans  &trans
-&trans              &trans             &kp LEFT            &kp DOWN           &kp RIGHT           &trans             &stp STP_BAT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &to 0        &trans  &kp NUMBER_4  &kp N5     &kp N6           &trans  &trans
-&kp LA(LC(LG(N1)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(G)))   &kp LA(LC(LG(S)))  &kp LA(LC(LG(C)))   &kp LA(LC(LG(R)))                                  &trans                 &trans                                        &trans  &kp N1        &kp N2     &kp N3           &trans  &trans
-&trans              &trans             &trans              &kp LA(LEFT)       &kp LA(RIGHT)                          &trans        &trans            &none                  &none           &trans           &trans               &kp N0        &none      &kp DOT          &trans  &trans
+&trans              &none              &kp LA(LS(N2))      &kp LA(N3)         &none               &none              &bootloader                                                                             &bootloader  &none  &none            &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp UNDER
+&trans              &none              &kp LA(LC(LG(N2)))  &kp UP             &kp LA(LC(LG(N3)))  &none              &email                                                                                  &none        &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
+&trans              &none              &kp LEFT            &kp DOWN           &kp RIGHT           &none              &stp STP_BAT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &to 0        &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none
+&kp LA(LC(LG(N1)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(G)))   &kp LA(LC(LG(S)))  &kp LA(LC(LG(C)))   &kp LA(LC(LG(R)))                                  &trans                 &trans                                        &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &none
+&trans              &trans             &trans              &kp LA(LEFT)       &kp LA(RIGHT)                          &trans        &trans            &none                  &none           &trans           &trans              &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER  &none
             >;
 
             label = "L2";
