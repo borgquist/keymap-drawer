@@ -380,7 +380,6 @@ text, tspan {
 </g>
 <g transform="translate(630, 84)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Swe</text>
 </g>
 <g transform="translate(686, 84)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -451,7 +450,6 @@ text, tspan {
 </g>
 <g transform="translate(630, 140)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Num</text>
 </g>
 <g transform="translate(686, 140)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -674,8 +672,8 @@ text, tspan {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(378, 84)" class="key keypos-20">
-<rect class="Email-key" x="-26" y="-26" width="52" height="52" rx="6" ry="6"/>
-<text x="0" y="0" class="key tap"><tspan class="Email-key">@</tspan></text>
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Swe</text>
 </g>
 <g transform="translate(630, 84)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -725,7 +723,7 @@ text, tspan {
 </g>
 <g transform="translate(378, 140)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Batt</text>
+<text x="0" y="0" class="key tap">Num</text>
 </g>
 <g transform="translate(395, 280) rotate(15.0)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -823,10 +821,12 @@ text, tspan {
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
 </g>
 <g transform="translate(35, 266)" class="key keypos-60">
-<rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
+<rect class="Email-key" x="-26" y="-26" width="52" height="52" rx="6" ry="6"/>
+<text x="0" y="0" class="key tap"><tspan class="Email-key">@</tspan></text>
 </g>
 <g transform="translate(98, 266)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Batt</text>
 </g>
 <g transform="translate(154, 252)" class="key keypos-62">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
