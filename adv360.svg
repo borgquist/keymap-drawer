@@ -505,7 +505,7 @@ text, tspan {
 </g>
 <g transform="translate(573, 349) rotate(-15.0)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan class="primary-label" y="5">=</tspan><tspan class="shifted-label" x="0" y="-15">+</tspan></text>
+<text x="0" y="0" class="key tap">Num</text>
 </g>
 <g transform="translate(686, 196)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -564,7 +564,7 @@ text, tspan {
 </g>
 <g transform="translate(588, 403) rotate(-15.0)" class="key keypos-68">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Num</text>
+<text x="0" y="0" class="key tap"><tspan class="primary-label" y="5">=</tspan><tspan class="shifted-label" x="0" y="-15">+</tspan></text>
 </g>
 <g transform="translate(635, 361) rotate(-15.0)" class="key keypos-69">
 <rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key"/>
@@ -673,10 +673,10 @@ text, tspan {
 </g>
 <g transform="translate(378, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Swe</text>
 </g>
 <g transform="translate(630, 84)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Swe</text>
 </g>
 <g transform="translate(686, 84)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -723,7 +723,6 @@ text, tspan {
 </g>
 <g transform="translate(378, 140)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Num</text>
 </g>
 <g transform="translate(395, 280) rotate(15.0)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
