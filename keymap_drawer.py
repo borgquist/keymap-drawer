@@ -6,6 +6,47 @@ import subprocess
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import html
+import shutil
+import os
+
+# Copy the most recent keymap file from the other directory
+def copy_most_recent_keymap(force=True):
+    source_dir = Path("/Users/fredrik/Projects/other/Adv360-Pro-ZMK/config")
+    target_dir = Path.cwd()
+    
+    # Check if source directory exists
+    if not source_dir.exists():
+        print(f"Source directory {source_dir} does not exist.")
+        return
+    
+    # Look for keymap files in the source directory
+    keymap_files = list(source_dir.glob("*.keymap"))
+    
+    if not keymap_files:
+        print(f"No keymap files found in {source_dir}")
+        return
+    
+    # Find the most recent keymap file
+    most_recent_file = max(keymap_files, key=lambda f: f.stat().st_mtime)
+    
+    # Destination filename (keeping the same basename)
+    dest_file = target_dir / most_recent_file.name
+    
+    # Check if destination file exists and is newer (only if force=False)
+    if not force and dest_file.exists() and dest_file.stat().st_mtime > most_recent_file.stat().st_mtime:
+        print(f"File {dest_file.name} in target directory is newer than source. Not overwriting.")
+        return
+    
+    # Copy the file
+    shutil.copy2(most_recent_file, dest_file)
+    source_str = str(source_dir)
+    target_str = str(target_dir)
+    print(f"Copied most recent keymap file: {most_recent_file.name}")
+    print(f"  From: {source_str}")
+    print(f"  To:   {target_str}")
+
+# Execute the function to copy the most recent keymap file
+copy_most_recent_keymap(force=True)
 
 def convert_keymap():
     """Run the keymap conversion process."""
