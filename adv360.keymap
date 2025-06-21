@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/stp.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -131,8 +132,8 @@
 &trans              &none              &kp LA(LS(N2))      &kp LA(N3)         &none               &none              &bootloader                                                                             &bootloader  &none  &kp KP_EQUAL     &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &to 0
 &trans              &none              &kp LA(LC(LG(N2)))  &kp UP             &kp LA(LC(LG(N3)))  &none              &none                                                                                   &none        &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
 &trans              &none              &kp LEFT            &kp DOWN           &kp RIGHT           &none              &stp STP_BAT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE    &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none
-&kp LA(LC(LG(N1)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(G)))   &kp LA(LC(LG(S)))  &kp LA(LC(LG(C)))   &kp LA(LC(LG(R)))                                  &trans                 &none                                         &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &none
-&email              &none              &trans              &kp LA(LEFT)       &kp LA(RIGHT)                          &trans        &trans            &trans                 &none           &trans           &trans              &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER  &none
+&kp LA(LC(LG(N1)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(G)))   &kp LA(LC(LG(S)))  &kp LA(LC(LG(C)))   &kp LA(LC(LG(R)))                                  &bt BT_CLR             &none                                         &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &none
+&email              &none              &trans              &kp LA(LEFT)       &kp LA(RIGHT)                          &bt BT_SEL 0  &bt BT_SEL 1      &trans                 &none           &trans           &trans              &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER  &none
             >;
 
             label = "L2";
