@@ -70,10 +70,10 @@ def convert_keymap():
     
     # Run the keymap command to draw the keymap
     print("Generating SVG from adv360.yaml...")
-    print("Running command: keymap -c keymap_config.yaml draw adv360.yaml --select-layers Base L2 -o adv360.svg")
+    print("Running command: keymap -c keymap_config.yaml draw adv360.yaml --select-layers Base -o adv360.svg")
     subprocess.run([
         "keymap", "-c", "keymap_config.yaml", "draw", "adv360.yaml",
-        "--select-layers", "Base", "L2",
+        "--select-layers", "Base",
         "-o", "adv360.svg"
     ], check=True)
     print("SVG file created: adv360.svg")
