@@ -52,27 +52,27 @@ def convert_keymap():
     """Run the keymap conversion process."""
     print("Using config file: keymap_config.yaml")
     print("Converting adv360.keymap to YAML with human-readable keys...")
-    
+
     # Read and display the keymap file
     with open("adv360.keymap", "r") as f:
         keymap_content = f.read()
         print(keymap_content)
-    
-    # Run the keymap command to parse the keymap
-    print("Running command: keymap -c keymap_config.yaml parse -z adv360.keymap -o adv360.yaml")
-    subprocess.run(["keymap", "-c", "keymap_config.yaml", "parse", "-z", "adv360.keymap", "-o", "adv360.yaml"], check=True)
+
+    # Run the keymap command to parse the keymap using python -m
+    print("Running command: python -m keymap_drawer -c keymap_config.yaml parse -z adv360.keymap -o adv360.yaml")
+    subprocess.run([sys.executable, "-m", "keymap_drawer", "-c", "keymap_config.yaml", "parse", "-z", "adv360.keymap", "-o", "adv360.yaml"], check=True)
     print("YAML file created: adv360.yaml")
-    
+
     # Parse and display the YAML file
     with open("adv360.yaml", "r") as f:
         yaml_content = f.read()
         print(yaml_content)
-    
+
     # Run the keymap command to draw the keymap
     print("Generating SVG from adv360.yaml...")
-    print("Running command: keymap -c keymap_config.yaml draw adv360.yaml --select-layers Base -o adv360.svg")
+    print("Running command: python -m keymap_drawer -c keymap_config.yaml draw adv360.yaml --select-layers Base -o adv360.svg")
     subprocess.run([
-        "keymap", "-c", "keymap_config.yaml", "draw", "adv360.yaml",
+        sys.executable, "-m", "keymap_drawer", "-c", "keymap_config.yaml", "draw", "adv360.yaml",
         "--select-layers", "Base",
         "-o", "adv360.svg"
     ], check=True)
