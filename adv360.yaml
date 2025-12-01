@@ -36,10 +36,10 @@ layers:
   - F
   - G
   - '-'
-  - '{'
-  - '}'
-  - (
-  - )
+  - Ctl+Gui+Alt+T
+  - Alt+Gui+Ctl+E
+  - '['
+  - ']'
   - Batt
   - H
   - J
@@ -54,7 +54,7 @@ layers:
   - V
   - B
   - ScrS
-  - '['
+  - Sft+Alt+Gui+C
   - N
   - M
   - ','
@@ -63,13 +63,13 @@ layers:
   - Shft
   - Ctrl
   - Alt
-  - ''
+  - Alt+Gui+Ctl+P
   - ←
   - →
   - Spce
   - Cmd
   - NxWin
-  - ']'
+  - Sft+Alt+Gui+I
   - ↵
   - ⌫
   - ↑
