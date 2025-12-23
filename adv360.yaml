@@ -22,7 +22,7 @@ layers:
   - R
   - T
   - +
-  - {t: BT, h: '0', s: CLR}
+  - CLR
   - Y
   - U
   - I
@@ -37,9 +37,9 @@ layers:
   - G
   - '-'
   - Ctl+Gui+Alt+T
-  - Alt+Gui+Ctl+E
-  - '['
-  - ']'
+  - Ctl+Gui+Alt+E
+  - {t: BT, h: '2'}
+  - Ctl+Gui+Alt+M
   - Batt
   - H
   - J
@@ -54,7 +54,7 @@ layers:
   - V
   - B
   - ScrS
-  - Sft+Alt+Gui+C
+  - {t: BT, h: '1'}
   - N
   - M
   - ','
@@ -63,17 +63,17 @@ layers:
   - Shft
   - Ctrl
   - Alt
-  - Alt+Gui+Ctl+P
+  - ''
   - ←
   - →
   - Spce
   - Cmd
   - NxWin
-  - Sft+Alt+Gui+I
+  - {t: BT, h: '0'}
   - ↵
   - ⌫
   - ↑
   - ↓
-  - ShAlt
+  - ''
   - Alt
   - Ctrl

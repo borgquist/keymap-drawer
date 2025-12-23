@@ -7,25 +7,6 @@
     behaviors {
         #include "macros.dtsi"
       #include "version.dtsi"
-
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
-        bt_morph: bt_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BT_MORPH";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     macros {
@@ -114,11 +95,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp N1        &kp N2             &kp N3    &kp N4     &kp N5  &bootloader                                                                                  &bootloader    &kp N6  &kp N7  &kp N8     &kp N9             &kp N0         &kp MINUS
-&kp TAB     &kp Q         &kp W              &kp E     &kp R      &kp T   &kp PLUS                                                                                     &bt_morph      &kp Y   &kp U   &kp I      &kp O              &kp P          &kp BSLH
-&kp EQUAL   &kp A         &kp S              &kp D     &kp F      &kp G   &kp MINUS    &kp LC(LG(LA(T)))  &kp LA(LG(LC(E)))      &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &stp STP_BAT   &kp H   &kp J   &kp K      &kp L              &kp SEMI       &kp SQT
-&kp LSHFT   &kp Z         &kp X              &kp C     &kp V      &kp B                                   &kp LS(LG(N4))         &kp LS(LA(LG(C)))                                    &kp N   &kp M   &kp COMMA  &kp DOT            &kp FSLH       &kp RSHFT
-&kp LCTRL   &kp LEFT_ALT  &kp LA(LG(LC(P)))  &kp LEFT  &kp RIGHT          &kp SPACE    &kp LEFT_COMMAND   &kp LG(ESCAPE)         &kp LS(LA(LG(I)))  &kp ENTER          &kp BACKSPACE          &kp UP  &kp DOWN   &kp RS(RIGHT_ALT)  &kp RIGHT_ALT  &kp RCTRL
+&kp ESCAPE  &kp N1        &kp N2  &kp N3    &kp N4     &kp N5  &bootloader                                                                             &bootloader    &kp N6  &kp N7  &kp N8     &kp N9   &kp N0         &kp MINUS
+&kp TAB     &kp Q         &kp W   &kp E     &kp R      &kp T   &kp PLUS                                                                                &bt BT_CLR     &kp Y   &kp U   &kp I      &kp O    &kp P          &kp BSLH
+&kp EQUAL   &kp A         &kp S   &kp D     &kp F      &kp G   &kp MINUS    &kp LC(LG(LA(T)))  &kp LC(LG(LA(E)))      &bt BT_SEL 2  &kp LC(LG(LA(M)))  &stp STP_BAT   &kp H   &kp J   &kp K      &kp L    &kp SEMI       &kp SQT
+&kp LSHFT   &kp Z         &kp X   &kp C     &kp V      &kp B                                   &kp LS(LG(N4))         &bt BT_SEL 1                                    &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
+&kp LCTRL   &kp LEFT_ALT  &none   &kp LEFT  &kp RIGHT          &kp SPACE    &kp LEFT_COMMAND   &kp LG(ESCAPE)         &bt BT_SEL 0  &kp ENTER          &kp BACKSPACE          &kp UP  &kp DOWN   &none    &kp RIGHT_ALT  &kp RCTRL
             >;
         };
 
