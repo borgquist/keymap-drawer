@@ -143,13 +143,13 @@
 }
 
 .o-umlaut-key {
-  fill: #27AE60 !important;
-  stroke: #229954 !important;
+  fill: #2ECC71 !important;
+  stroke: #27AE60 !important;
 }
 
 .o-umlaut-key rect, rect.o-umlaut-key {
-  fill: #27AE60 !important;
-  stroke: #229954 !important;
+  fill: #2ECC71 !important;
+  stroke: #27AE60 !important;
 }
 
 .a-ring-key {
@@ -158,6 +158,16 @@
 }
 
 .a-ring-key rect, rect.a-ring-key {
+  fill: #2ECC71 !important;
+  stroke: #27AE60 !important;
+}
+
+.a-umlaut-key {
+  fill: #2ECC71 !important;
+  stroke: #27AE60 !important;
+}
+
+.a-umlaut-key rect, rect.a-umlaut-key {
   fill: #2ECC71 !important;
   stroke: #27AE60 !important;
 }

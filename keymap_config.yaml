@@ -1,7 +1,7 @@
 parse_config:
   # Map raw bindings to human-readable labels
   raw_binding_map:
-    "&mo 1": "Swe"
+    "&mo 1": "L1"
     "&mo 2": "Num"
     "&kp LALT": "Alt"
     "&kp RALT": "Alt"
@@ -29,6 +29,12 @@ parse_config:
     "&kp LA(LC(LG(C)))": "Chrm"
     "&kp LA(LC(LG(R)))": "Curs"
     "&kp LA(LC(LG(G)))": "GitH"
+    "&kp LC(LG(LA(T)))": "mnt"
+    "&kp LC(LG(LA(E)))": "Gmail"
+    "&kp LA(LC(LG(M)))": "Mac"
+    "&sv_aa": "å"
+    "&sv_oe": "ö"
+    "&sv_ae": "ä"
     "&kp LA(LC(LG(N2)))": "L←"
     "&kp LA(LC(LG(N3)))": "R→"
     "&kp LG(LEFT)": "⌘←"
@@ -79,7 +85,7 @@ parse_config:
     "&none": ""
     "&trans": ""
     "&to 0": "Base"
-    "&to 1": "Swe"
+    "&to 1": "L1"
     "&to 2": "Num"
     "&to 3": "L3"
     "&to 4": "L4"
@@ -183,8 +189,9 @@ draw_config:
     
     # Special characters - purple
     L1.@: {fill: "#cc99ff", stroke: "#9966cc"}
-    L1.ö: {fill: "#cc99ff", stroke: "#9966cc"}
-    L1.å: {fill: "#cc99ff", stroke: "#9966cc"}
+    "BT Clear.å": {fill: "#4CAF50", stroke: "#388E3C"}
+    "BT Clear.ö": {fill: "#4CAF50", stroke: "#388E3C"}
+    "BT Clear.ä": {fill: "#4CAF50", stroke: "#388E3C"}
     
     # Navigation keys - blue
     L1.⌘←: {fill: "#80bfff", stroke: "#6699cc"}

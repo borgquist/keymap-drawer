@@ -70,10 +70,10 @@ def convert_keymap():
     
     # Run the keymap command to draw the keymap
     print("Generating SVG from adv360.yaml...")
-    print("Running command: keymap -c keymap_config.yaml draw adv360.yaml --select-layers Base -o adv360.svg")
+    print("Running command: keymap -c keymap_config.yaml draw adv360.yaml --select-layers 'Base' 'BT Clear' -o adv360.svg")
     subprocess.run([
         "keymap", "-c", "keymap_config.yaml", "draw", "adv360.yaml",
-        "--select-layers", "Base",
+        "--select-layers", "Base", "BT Clear",
         "-o", "adv360.svg"
     ], check=True)
     print("SVG file created: adv360.svg")
@@ -205,9 +205,11 @@ def add_css_to_svg(svg_file):
                      r'\1<tspan class="Email-key">\2</tspan>\3', content)
     content = re.sub(r'(<g[^>]*>\s*<rect[^>]*>\s*<text[^>]*>)(ö)(</text>)', 
                      r'\1<tspan class="o-umlaut-key">\2</tspan>\3', content)
-    content = re.sub(r'(<g[^>]*>\s*<rect[^>]*>\s*<text[^>]*>)(å)(</text>)', 
+    content = re.sub(r'(<g[^>]*>\s*<rect[^>]*>\s*<text[^>]*>)(å)(</text>)',
                      r'\1<tspan class="a-ring-key">\2</tspan>\3', content)
-    
+    content = re.sub(r'(<g[^>]*>\s*<rect[^>]*>\s*<text[^>]*>)(ä)(</text>)',
+                     r'\1<tspan class="a-umlaut-key">\2</tspan>\3', content)
+
     # Navigation
     content = re.sub(r'(<g[^>]*>\s*<rect[^>]*>\s*<text[^>]*>)([↑↓←→])(</text>)', 
                      r'\1<tspan class="arrow-key">\2</tspan>\3', content)
@@ -244,6 +246,7 @@ def add_css_to_svg(svg_file):
         "@": "Email-key",
         "ö": "o-umlaut-key",
         "å": "a-ring-key",
+        "ä": "a-umlaut-key",
         "ScrS": "Screenshot-key"
     }
     
