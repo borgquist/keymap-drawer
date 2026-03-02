@@ -454,11 +454,11 @@ text, tspan {
 </g>
 <g transform="translate(559, 295) rotate(-15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Hyper+3</text>
+<text x="0" y="0" class="key tap">Ctl+3</text>
 </g>
 <g transform="translate(613, 280) rotate(-15.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan class="primary-label" y="5">=</tspan><tspan class="shifted-label" x="0" y="-15">+</tspan></text>
+<text x="0" y="0" class="key tap">Ctl+4</text>
 </g>
 <g transform="translate(630, 140)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -518,7 +518,7 @@ text, tspan {
 </g>
 <g transform="translate(573, 349) rotate(-15.0)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Hyper+2</text>
+<text x="0" y="0" class="key tap">Ctl+2</text>
 </g>
 <g transform="translate(686, 196)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -578,7 +578,7 @@ text, tspan {
 </g>
 <g transform="translate(588, 403) rotate(-15.0)" class="key keypos-68">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Hyper+1</text>
+<text x="0" y="0" class="key tap">Ctl+1</text>
 </g>
 <g transform="translate(635, 361) rotate(-15.0)" class="key keypos-69">
 <rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key"/>
