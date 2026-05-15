@@ -447,25 +447,25 @@ text, tspan {
 <g transform="translate(395, 280) rotate(15.0)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+Ctl</tspan><tspan x="0" dy="1.2em">+Z</tspan>
+<tspan x="0" dy="-0.6em">TopL</tspan><tspan x="0" dy="1.2em">⅔</tspan>
 </text>
 </g>
 <g transform="translate(449, 295) rotate(15.0)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+Ctl</tspan><tspan x="0" dy="1.2em">+X</tspan>
+<tspan x="0" dy="-0.6em">BtmL</tspan><tspan x="0" dy="1.2em">⅔</tspan>
 </text>
 </g>
 <g transform="translate(559, 295) rotate(-15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Ctl+Alt</tspan><tspan x="0" dy="1.2em">+D</tspan>
+<tspan x="0" dy="-0.6em">Left</tspan><tspan x="0" dy="1.2em">⅓</tspan>
 </text>
 </g>
 <g transform="translate(613, 280) rotate(-15.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+Ctl</tspan><tspan x="0" dy="1.2em">+F</tspan>
+<tspan x="0" dy="-0.6em">Mid</tspan><tspan x="0" dy="1.2em">⅓</tspan>
 </text>
 </g>
 <g transform="translate(630, 140)" class="key keypos-39">
@@ -529,7 +529,7 @@ text, tspan {
 <g transform="translate(573, 349) rotate(-15.0)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+Ctl</tspan><tspan x="0" dy="1.2em">+G</tspan>
+<tspan x="0" dy="-0.6em">Right</tspan><tspan x="0" dy="1.2em">⅓</tspan>
 </text>
 </g>
 <g transform="translate(686, 196)" class="key keypos-54">
@@ -749,13 +749,13 @@ text, tspan {
 <g transform="translate(559, 295) rotate(-15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+Ctl</tspan><tspan x="0" dy="1.2em">+Q</tspan>
+<tspan x="0" dy="-0.6em">Left</tspan><tspan x="0" dy="1.2em">⅔</tspan>
 </text>
 </g>
 <g transform="translate(613, 280) rotate(-15.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+Ctl</tspan><tspan x="0" dy="1.2em">+W</tspan>
+<tspan x="0" dy="-0.6em">Right</tspan><tspan x="0" dy="1.2em">⅔</tspan>
 </text>
 </g>
 <g transform="translate(630, 140)" class="key keypos-39">
