@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: adv360}
 layers:
-  Base: [Esc, '1', '2', '3', '4', '5', Boot, Boot, '6', '7', '8', '9', '0', '-', Tab, Q, W, E, R, T, +, '', Y, U, I, O, P, \, '=', A, S, D, F, G, '-', mnt, Gmail,
-    Ctl+3, Ctl+4, Batt, H, J, K, L, ;, '''', Shft, Z, X, C, V, B, ScrS, Ctl+2, N, M, ',', ., /, Shft, Ctrl, Alt, L1, ←, →, Spce, Cmd, NxWin, Ctl+1, ↵, ⌫, ↑, ↓, L1,
-    Alt, Ctrl]
+  Base: [Esc, '1', '2', '3', '4', '5', Boot, Boot, '6', '7', '8', '9', '0', '-', Tab, Q, W, E, R, T, +, '', Y, U, I, O, P, \, '=', A, S, D, F, G, '-', Alt+Ctl+Z,
+    Alt+Ctl+X, Ctl+Alt+D, Alt+Ctl+F, Batt, H, J, K, L, ;, '''', Shft, Z, X, C, V, B, Sft+Gui+4, Alt+Ctl+G, N, M, ',', ., /, Shft, Ctrl, Alt, L1, ←, →, Spce, Cmd,
+    NxWin, L1, ↵, ⌫, ↑, ↓, L1, Alt, Ctrl]
   BT Clear:
   - ''
   - ''
@@ -24,7 +24,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: BT, h: '1'}
   - CLR
   - ''
   - ''
@@ -38,11 +38,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
   - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
+  - mnt
+  - Gmail
+  - Alt+Ctl+Q
+  - Alt+Ctl+W
   - ''
   - ''
   - ''
@@ -57,7 +57,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Alt+Ctl+E
   - ''
   - ''
   - ''
