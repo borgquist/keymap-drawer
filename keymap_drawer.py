@@ -62,18 +62,24 @@ def convert_keymap():
     print("Running command: keymap -c keymap_config.yaml parse -z adv360.keymap -o adv360.yaml")
     subprocess.run(["keymap", "-c", "keymap_config.yaml", "parse", "-z", "adv360.keymap", "-o", "adv360.yaml"], check=True)
     print("YAML file created: adv360.yaml")
-    
+
+    # Rename "BT Clear" layer to "Utility" (legacy name from the source keymap)
+    yaml_path = Path("adv360.yaml")
+    yaml_text = yaml_path.read_text()
+    yaml_text = yaml_text.replace("BT Clear:", "Utility:")
+    yaml_path.write_text(yaml_text)
+
     # Parse and display the YAML file
     with open("adv360.yaml", "r") as f:
         yaml_content = f.read()
         print(yaml_content)
-    
+
     # Run the keymap command to draw the keymap
     print("Generating SVG from adv360.yaml...")
-    print("Running command: keymap -c keymap_config.yaml draw adv360.yaml --select-layers 'Base' 'BT Clear' -o adv360.svg")
+    print("Running command: keymap -c keymap_config.yaml draw adv360.yaml --select-layers 'Base' 'Utility' -o adv360.svg")
     subprocess.run([
         "keymap", "-c", "keymap_config.yaml", "draw", "adv360.yaml",
-        "--select-layers", "Base", "BT Clear",
+        "--select-layers", "Base", "Utility",
         "-o", "adv360.svg"
     ], check=True)
     print("SVG file created: adv360.svg")

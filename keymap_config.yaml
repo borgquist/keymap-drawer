@@ -33,14 +33,15 @@ parse_config:
     "&kp LC(LG(LA(E)))": "Gmail"
     "&kp LA(LC(LG(M)))": "Mac"
     # Rectangle Pro window shortcuts (Alt+Ctl+letter)
-    "&kp LA(LC(Z))": "TopL ⅔"
-    "&kp LA(LC(X))": "BtmL ⅔"
+    "&kp LA(LC(Z))": "Prev Disp"
+    "&kp LA(LC(X))": "Next Disp"
     "&kp LC(LA(D))": "Left ⅓"
     "&kp LA(LC(D))": "Left ⅓"
-    "&kp LA(LC(F))": "Mid ⅓"
-    "&kp LA(LC(G))": "Right ⅓"
-    "&kp LA(LC(Q))": "Left ⅔"
-    "&kp LA(LC(W))": "Right ⅔"
+    "&kp LA(LC(F))": "Left ⅔"
+    "&kp LA(LC(Q))": "Left ½"
+    "&kp LA(LC(W))": "TopL ⅔"
+    "&kp LA(LC(E))": "BtmL"
+    "&kp LA(LC(G))": "TopL"
     "&sv_aa": "å"
     "&sv_oe": "ö"
     "&sv_ae": "ä"
@@ -198,9 +199,9 @@ draw_config:
     
     # Special characters - purple
     L1.@: {fill: "#cc99ff", stroke: "#9966cc"}
-    "BT Clear.å": {fill: "#4CAF50", stroke: "#388E3C"}
-    "BT Clear.ö": {fill: "#4CAF50", stroke: "#388E3C"}
-    "BT Clear.ä": {fill: "#4CAF50", stroke: "#388E3C"}
+    "Utility.å": {fill: "#4CAF50", stroke: "#388E3C"}
+    "Utility.ö": {fill: "#4CAF50", stroke: "#388E3C"}
+    "Utility.ä": {fill: "#4CAF50", stroke: "#388E3C"}
     
     # Navigation keys - blue
     L1.⌘←: {fill: "#80bfff", stroke: "#6699cc"}
