@@ -1,8 +1,7 @@
 layout: {zmk_keyboard: adv360}
 layers:
-  Base: [Esc, '1', '2', '3', '4', '5', Boot, Boot, '6', '7', '8', '9', '0', '-', Tab, Q, W, E, R, T, +, '', Y, U, I, O, P, \, '=', A, S, D, F, G, '-', Sams, LG ⟳,
-    Wdt ⟳, Hgt ⟳, Batt, H, J, K, L, ;, '''', Shft, Z, X, C, V, B, ScrS, spare G, N, M, ',', ., /, Shft, Ctrl, Alt, L1, ←, →, Spce, Cmd, NxWin, L1, ↵, ⌫, ↑, ↓, L1,
-    Alt, Ctrl]
+  Base: [Esc, '1', '2', '3', '4', '5', Boot, Boot, '6', '7', '8', '9', '0', '-', Tab, Q, W, E, R, T, +, '', Y, U, I, O, P, \, '=', A, S, D, F, G, '-', 16″, LG, TopL,
+    TopM, Batt, H, J, K, L, ;, '''', Shft, Z, X, C, V, B, ScrS, Right, N, M, ',', ., /, Shft, Ctrl, Alt, L1, ←, →, Spce, Cmd, NxWin, L1, ↵, ⌫, ↑, ↓, L1, Alt, Ctrl]
   Utility:
   - ''
   - ''
@@ -41,13 +40,13 @@ layers:
   - {t: BT, h: '0'}
   - mnt
   - Gmail
-  - spare Q
-  - spare W
+  - BtmL
+  - BtmM
   - ''
-  - Hgt ⟳
-  - ↖
-  - ↑
-  - ↗
+  - TopM
+  - spare J
+  - spare K
+  - spare L
   - ö
   - ä
   - ''
@@ -58,10 +57,10 @@ layers:
   - ''
   - ''
   - spare E
-  - Wdt ⟳
-  - ↙
-  - ↓
-  - ↘
+  - TopL
+  - spare M
+  - spare ,
+  - spare .
   - ''
   - ''
   - ''
